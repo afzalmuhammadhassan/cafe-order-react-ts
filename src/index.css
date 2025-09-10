@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 24px;
+  color: #222;
+}
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+/* two columns: menu left, bill right */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* each item line */
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+
+/* pill button */
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 999px;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 -2px 0 rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.price {
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+/* red circular badge */
+.badge {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  background: #e63946;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* bill card */
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+.card p {
+  margin: 6px 0;
+  font-size: 16px;
+}
